@@ -16,6 +16,7 @@ class ReSTHandler(tornado.web.RequestHandler):
     
     def post(self):
         self.pressCount['count'] += 1
+        self.write(self.pressCount)
 
 class Server:
 
